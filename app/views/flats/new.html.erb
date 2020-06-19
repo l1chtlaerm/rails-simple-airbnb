@@ -1,0 +1,11 @@
+<div class="container">
+  <%= simple_form_for @flat do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :price_per_night %>
+    <%= f.input :number_of_guests %>
+    <%= f.input :img, label: 'Wanna add an image? :)' %>
+    <%= f.button :submit, class: "btn btn-outline-success py-3" %>
+  <% end %>
+</div>
+
